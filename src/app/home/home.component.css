@@ -1,0 +1,78 @@
+#h11{
+  font-size: 50px;
+  color: #dd3333;
+}
+.h111{
+  margin-top: 50%;
+  margin-left: 45%;
+  font-size: 40px;
+}
+
+hr.styled-hr {
+  border: none; /* Elimina la línea predeterminada */
+  height: 2px; /* Ajusta la altura de la línea */
+  margin: 20px auto; /* Centra el hr y agrega un margen superior e inferior de 20px */
+  width: 70%; /* Ajusta el ancho de la línea, puedes cambiar el porcentaje según desees */
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateZ(0);
+}
+
+.content {
+  /* Estilo para el contenido que desees mostrar en la parte superior de la imagen parallax */
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nombres:hover{
+
+ transition: opacity 0.3s ease;
+}
+
+#hover-opacity {
+  transition: opacity 0.3s ease; /* Transición suave para el efecto */
+}
+
+#hover-opacity:hover {
+  opacity: 0.7; /* Opacidad de la imagen cuando el cursor está encima */
+}
+
+#button1{
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  border-color: black;
+
+}
+
+.img-hover:hover {
+  transform: translateY(10px); /* Cambia la profundidad en 20px (ajusta según tus preferencias) */
+}
+
+#hover-opacity1 {
+  transition: opacity 0.9s ease; /* Transición suave para el efecto */
+}
+
+#hover-opacity1:hover {
+  opacity: 0.8; /* Opacidad de la imagen cuando el cursor está encima */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FirstPage</title>
+</head>
+<body >
+<!--
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-white">
+  <body class="h-full">
+  ```
+-->
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+  <div class="sm:mx-auto sm:w-full  pt-44 sm:max-w-sm">
+    <img class="mx-auto h-10 w-auto" src="data:image/png;base64,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" alt="Your Company">
+    <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Create an account</h2>
+  </div>
+
+  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+    <form class="space-y-6" action="#" method="POST">
+      <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+        <div class="mt-2">
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email address" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center justify-between" >
+          <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+          <!-- <div class="text-sm">
+            <a href="#" class="font-semibold text-blue-800 hover:text-red-600" >Forgot password?</a>
+          </div> -->
+        </div>
+        <div class="mt-2">
+          <input id="password" name="password" placeholder="Enter your password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" >
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="flex w-full justify-center rounded-md bg-blue-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</button>
+      </div>
+    </form>
+
+    <p class="mt-10 text-center text-sm text-gray-500">
+      Already have a petco account ?
+      <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500" routerLink="register">Log in</a>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
